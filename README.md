@@ -44,3 +44,16 @@ private readonly GUIManager guiManager = GUIManager.Get()
 ### TODO интересное: настроить github action для проекта. 
 И чтобы он коммитил автоген код и задачи выше
 ### TODO обновить версию unity
+
+
+# Про настройку Actions
+1. Запустить activation.yml вручную
+2. Скачать полученный артефакт Unity_v20XX.X.XXXX.alf
+3. Загрузить его на license.unity3d.com, скачать ответ
+4. Github > Название репозитория > Settings > Secrets
+5. Создать:
+      * UNITY_LICENSE - (целиком содержимое ответа)
+      * UNITY_EMAIL - (аккаунта в юнити)
+      * UNITY_PASSWORD - (аккаунта в юнити)
+
+После этого остальные Workflows будут заводиться
