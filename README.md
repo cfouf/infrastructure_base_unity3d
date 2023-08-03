@@ -43,7 +43,6 @@ private readonly GUIManager guiManager = GUIManager.Get()
 
 ### TODO интересное: настроить github action для проекта. 
 И чтобы он коммитил автоген код и задачи выше
-### TODO обновить версию unity
 
 
 # Про настройку Actions
