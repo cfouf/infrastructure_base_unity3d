@@ -1,0 +1,9 @@
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.csproj.AssemblyReference.cache
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.AssemblyInfoInputs.cache
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.AssemblyInfo.cs
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.csproj.CoreCompileInputs.cache
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\bin\Debug\net3.5\Autogen.dll
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\bin\Debug\net3.5\Autogen.pdb
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.dll
+C:\Users\agaponovf\Documents\GitHub\infrastructure_base_unity3d\Autogen\obj\Debug\net3.5\Autogen.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7pf1WLqfX5m0w3+2+fzsUD22MnJjL6AbGsO4UTwr0WSw78LYIXh96jwVL4VT0sMl/wIwcGU2nmMvl+8pZB3A4A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\agaponovf\\Documents\\GitHub\\infrastructure_base_unity3d\\Autogen\\Autogen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\agaponovf\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\agaponovf\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net35\\1.0.3\\microsoft.netframework.referenceassemblies.net35.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
