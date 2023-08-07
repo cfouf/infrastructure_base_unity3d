@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Autogen
+namespace FiledGenerator
 {
-    public static class Autogen
+    public class FiledGenerator
     {
         public static void GenerateCode()
         {
