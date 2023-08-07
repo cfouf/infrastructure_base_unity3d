@@ -17,13 +17,24 @@ namespace _Scripts.Managers
 
         private List<Construction> constructions;
 
-        private List<ICallable> callables = new List<ICallable>();
-        private List<IManager> managers = new List<IManager>();
+        private List<ICallable> callables = new();
+        private List<IManager> managers = new();
 
         private Center center;
 
         protected override void OnCreateService()
         {
+#if UNITY_EDITOR
+            var codeGenerators = MonoBehaviourServiceHelper.GetAllInstances<ICodeGenerator>();
+            var wasCodeGenerated = false;
+            foreach (var codeGenerator in codeGenerators)
+                wasCodeGenerated = codeGenerator.GenerateCode();
+
+            if (wasCodeGenerated)
+                Application.Quit();
+
+#endif
+            
             managers = MonoBehaviourServiceHelper.GetAllInstances<IManager>();
 
             constructions = Spawner.CreateConstructions(amountOfConstructions, sizeOfConstruction);

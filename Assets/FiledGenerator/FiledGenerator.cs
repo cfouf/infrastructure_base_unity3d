@@ -7,11 +7,12 @@ namespace FiledGenerator
 {
     public class FiledGenerator
     {
-        public static void GenerateCode()
+        public static bool GenerateFields()
         {
             var assembly = Assembly.GetExecutingAssembly();
 
             var pathsToManagers = GetPathsToManagers(assembly);
+            return false;
         }
 
         private static IEnumerable<string> GetPathsToManagers(Assembly assembly)

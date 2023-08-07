@@ -1,0 +1,6 @@
+C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\bin\Debug\FiledGenerator.dll
+C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\bin\Debug\FiledGenerator.pdb
+C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\obj\Debug\FiledGenerator.csproj.AssemblyReference.cache
+C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\obj\Debug\FiledGenerator.csproj.CoreCompileInputs.cache
+C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\obj\Debug\FiledGenerator.dll
+C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\obj\Debug\FiledGenerator.pdb

@@ -51,28 +51,33 @@
      <Compile Include="Assets\_Scripts\Utilities\Interfaces\IManager.cs" />
      <Compile Include="Assets\_Scripts\Utilities\Extentions.cs" />
      <Compile Include="Assets\_Scripts\Managers\CollisionsManager.cs" />
+     <Compile Include="Assets\_Scripts\Utilities\FiledGenerator.cs" />
      <Compile Include="Assets\_Scripts\Utilities\MonoBehaviourServiceHelper.cs" />
      <Compile Include="Assets\_Scripts\Managers\TimeManager.cs" />
      <Compile Include="Assets\_Scripts\Entities\Cube.cs" />
      <Compile Include="Assets\_Scripts\Managers\GUIManager.cs" />
      <Compile Include="Assets\_Scripts\Entities\Construction.cs" />
      <Compile Include="Assets\_Scripts\Entities\State.cs" />
+     <Compile Include="Assets\_Scripts\Utilities\Interfaces\ICodeGenerator.cs" />
      <Compile Include="Assets\_Scripts\Utilities\SetPair.cs" />
      <Compile Include="Assets\_Scripts\Managers\ScoreManager.cs" />
      <Compile Include="Assets\_Scripts\Entities\Center.cs" />
      <Compile Include="Assets\_Scripts\Utilities\ClickableObject.cs" />
      <Compile Include="Assets\_Scripts\Utilities\Spawner.cs" />
      <Compile Include="Assets\_Scripts\Utilities\Interfaces\ICallable.cs" />
+     <Compile Include="Assets\FiledGenerator\FiledGenerator.cs" />
      <Compile Include="Assets\_Scripts\Utilities\EventBus\EventBus.cs" />
      <Compile Include="Assets\_Scripts\Utilities\MonoBehaviourService.cs" />
      <Compile Include="Assets\_Scripts\Utilities\EventBus\EventBusGeneric.cs" />
      <Compile Include="Assets\_Scripts\Utilities\Events.cs" />
+     <Compile Include="Assets\FiledGenerator\Properties\AssemblyInfo.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\_Scripts\Utilities" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
+     <Folder Include="Assets\FiledGenerator\bin\Debug" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
@@ -81,7 +86,10 @@
      <Folder Include="Assets\_Scripts\Utilities\EventBus" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\TextMesh Pro" />
+     <None Include="Assets\FiledGenerator\obj\Debug\FiledGenerator.csproj.FileListAbsolute.txt" />
      <Folder Include="Assets\Models" />
+     <Folder Include="Assets\FiledGenerator\bin" />
+     <Folder Include="Assets\FiledGenerator\obj\Debug" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\Resources" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -90,11 +98,13 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\_Scripts\Utilities\Interfaces" />
+     <Folder Include="Assets\FiledGenerator" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <Folder Include="Assets\TextMesh Pro\Shaders" />
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <Folder Include="Assets\FiledGenerator\obj" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\_Scripts" />
      <Folder Include="Assets\_Scripts\Managers" />
@@ -107,6 +117,7 @@
      <Folder Include="Assets\TextMesh Pro\Documentation" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+     <Folder Include="Assets\FiledGenerator\Properties" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -356,6 +367,9 @@
      </Reference>
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+     </Reference>
+     <Reference Include="FiledGenerator">
+     <HintPath>C:\Users\filag\OneDrive\Документы\infrastructure_base_unity3d\Assets\FiledGenerator\bin\Debug\FiledGenerator.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
