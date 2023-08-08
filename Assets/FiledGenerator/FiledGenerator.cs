@@ -11,17 +11,11 @@ namespace FiledGenerator
         {
             var assembly = Assembly.GetExecutingAssembly();
 
-            var pathsToManagers = GetPathsToManagers(assembly);
-            return false;
-        }
+            var pathsToManagers = assembly.GetPathsToManagers();
 
-        private static IEnumerable<string> GetPathsToManagers(Assembly assembly)
-        {
-            return assembly.GetTypes()
-                .Where(type => ImplementsInterface(type, "IManager"))
-                .Select(type => assembly.Location)
-                .Distinct()
-                .ToList();
+            var pathToManager = assembly.GetPathToGameManager();
+            
+            return false;
         }
 
         private static bool ImplementsInterface(Type type, string interfaceFullName)
