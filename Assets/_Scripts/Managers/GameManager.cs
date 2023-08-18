@@ -1,7 +1,10 @@
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 using _Scripts.Entities;
 using _Scripts.Utilities;
 using _Scripts.Utilities.Interfaces;
+using Assets._Scripts.Attributes;
 using UnityEngine;
 
 namespace _Scripts.Managers
@@ -31,11 +34,13 @@ namespace _Scripts.Managers
                 wasCodeGenerated = codeGenerator.GenerateCode();
 
             if (wasCodeGenerated)
-                Application.Quit();
+                MediaTypeNames.Application.Quit();
 
 #endif
-            
+
             managers = MonoBehaviourServiceHelper.GetAllInstances<IManager>();
+
+            FillManagerVariables();
 
             constructions = Spawner.CreateConstructions(amountOfConstructions, sizeOfConstruction);
             center = Spawner.CreateCenter(gravityAcceleration);
@@ -70,5 +75,31 @@ namespace _Scripts.Managers
         {
             callables.ForEach(callable => callable.Call());
         }
+
+        private void FillManagerVariables()
+        {
+            foreach (var manager in managers)
+            {
+                var fields = manager.GetType()
+                    .GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+
+                foreach (var field in fields)
+                {
+                    var attribute =
+                        (AssignFromGameManagerAttribute) Attribute.GetCustomAttribute(field,
+                            typeof(AssignFromGameManagerAttribute));
+                    if (attribute != null)
+                    {
+                        var gameManagerField = typeof(GameManager).GetField(field.Name,
+                            BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                        if (gameManagerField != null)
+                        {
+                            field.SetValue(manager, gameManagerField.GetValue(this));
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
